@@ -16,6 +16,7 @@
 
 	<properties>
 		<java.version>1.8</java.version>
+		<sharding-sphere.version>4.1.0</sharding-sphere.version>
 	</properties>
 
 	<dependencies>
@@ -42,6 +43,20 @@
 			<version>3.4.2</version>
 		</dependency>
 
+
+		<!-- for spring boot -->
+		<dependency>
+			<groupId>org.apache.shardingsphere</groupId>
+			<artifactId>sharding-jdbc-spring-boot-starter</artifactId>
+			<version>${sharding-sphere.version}</version>
+		</dependency>
+
+		<!-- for spring namespace -->
+		<dependency>
+			<groupId>org.apache.shardingsphere</groupId>
+			<artifactId>sharding-jdbc-spring-namespace</artifactId>
+			<version>${sharding-sphere.version}</version>
+		</dependency>
 	</dependencies>
 
 	<build>
